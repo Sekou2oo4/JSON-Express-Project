@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Demo - JSON Express</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>API Demo</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="api-demo.html">API Demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Book List (API Demo)</h2>
+    <p>
+      This section demonstrates the use of an API to dynamically load data from a server. The book information you see here
+      is stored in a JSON file and served through a custom-built Express.js route.
+    </p>
+    <p>
+      When you click the "Load Books" button, a request is sent to the server using JavaScript’s <code>fetch</code> API with
+      <strong>async/await</strong> syntax. The data is retrieved and rendered live in the browser.
+    </p>
+    <p>
+      This mimics how modern web applications like Amazon or Goodreads load book details, reviews, or search results without
+      reloading the page. It creates a seamless and responsive experience for users.
+    </p>
+    <button id="load-btn">Load Books</button>
+    <div id="result"></div>
+  </main>
+  
+
+  <script src="script.js"></script>
+</body>
